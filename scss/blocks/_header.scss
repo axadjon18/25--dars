@@ -1,0 +1,81 @@
+/*-------------------------HEADER STYLES START---------------------*/
+ .site-header{
+ padding: 30px 0 0 0;
+ background-color: #fff;
+   
+ &__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ &__nav-wrapper{
+   display: flex;
+   align-items: center;
+   column-gap: 40px
+ }
+ &__logo-link{
+    @include link-unstyled;
+  }
+
+ &__nav-link{
+    position: relative;
+    color: #333;
+text-align: center;
+font-family: Roboto;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; 
+    
+    @include link-unstyled;
+
+    &:hover{
+        color: black;
+    }
+    
+    &::after{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        content: "";
+        margin: auto;
+        width: 0;
+        height: 1.5px;
+        background-color: #000;
+        transition: all 0.3s linear;
+    }
+
+    &:hover:after{
+        width: 100%;
+    }
+ }
+
+ &__nav-list{
+    display: flex;
+    gap: 30px;
+    @include list-unstyled;
+ }
+
+ &__nav-input{
+   margin-right: 0;    
+   position: relative;
+   top: 3px;
+      border: none;
+   outline: none;
+   padding-bottom: 4px;
+  border-bottom: 1px solid #333;
+   color: #666;
+ font-family: Roboto;
+font-size: 15px;
+ font-weight: 400;
+line-height: 150%;
+
+ }
+ 
+
+
+}
+
+/*-------------------------HEADER STYLES END---------------------*/

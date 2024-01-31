@@ -1,0 +1,315 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+/*------------------------CONTAINER---------------------*/
+.container {
+  width: 100%;
+  max-width: 1030px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/*------------------------CONTAINER---------------------*/
+/*-------------------------HEADER STYLES START---------------------*/
+.site-header {
+  padding: 30px 0 0 0;
+  background-color: #fff;
+}
+.site-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.site-header__nav-wrapper {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+}
+.site-header__logo-link {
+  text-decoration: none;
+  background-color: transparent;
+}
+.site-header__nav-link {
+  position: relative;
+  color: #333;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  text-decoration: none;
+  background-color: transparent;
+}
+.site-header__nav-link:hover {
+  color: black;
+}
+.site-header__nav-link::after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  content: "";
+  margin: auto;
+  width: 0;
+  height: 1.5px;
+  background-color: #000;
+  transition: all 0.3s linear;
+}
+.site-header__nav-link:hover:after {
+  width: 100%;
+}
+.site-header__nav-list {
+  display: flex;
+  gap: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+.site-header__nav-input {
+  margin-right: 0;
+  position: relative;
+  top: 3px;
+  border: none;
+  outline: none;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #333;
+  color: #666;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+/*-------------------------HEADER STYLES END---------------------*/
+/* ---------------------------HERO STYLE START---------------------*/
+.section-hero {
+  padding: 170px 0 183px 0;
+  background-color: #fff;
+  background-image: url("../assets/images/watch2x.png");
+  background-repeat: no-repeat;
+  background-size: 400px;
+  background-position: calc(50% + 430px) 85px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .section-hero .section-hero {
+    background-image: url("../assets/images/intro-bg@2x.png");
+  }
+}
+.section-hero__title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #000;
+  font-family: Roboto;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 120%;
+}
+.section-hero__wrapper {
+  width: 100%;
+  max-width: 490px;
+}
+.section-hero__description {
+  width: 100%;
+  max-width: 450px;
+  padding-left: 40px;
+  margin-bottom: 30px;
+  border-left: 3px solid #777;
+  color: #777;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+}
+.section-hero__btn {
+  border: none;
+  background: #EA625C;
+  color: #FFF;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 150%;
+  display: flex;
+  width: 260px;
+  padding: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
+.line {
+  margin: 0;
+}
+
+/* ---------------------------HERO STYLE END---------------------*/
+/*---------------------------INFO STYLE START--------------------*/
+.info {
+  padding: 70px 0;
+}
+.info__list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 80px;
+       column-gap: 80px;
+}
+.info__item-title {
+  margin: 0 0 30px 0;
+  color: hsl(0, 0%, 13%);
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 150%;
+}
+.info__item {
+  width: 280px;
+}
+.info__item:not(:last-child)::after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  box-shadow: 18px 0 0 0 #ddd, 36px 0 0 0 #ddd;
+}
+.info__item-desc {
+  color: #333;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 160%;
+}
+.info__item-link {
+  display: flex;
+  align-items: center;
+  color: #EA625C;
+  text-decoration: none;
+  background-color: transparent;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 160%;
+}
+.info__item-link::before {
+  content: "";
+  display: inline-block;
+  margin-right: 10px;
+  width: 40px;
+  height: 3px;
+  background-color: #EA625C;
+}
+
+/*---------------------------INFO STYLE END--------------------*/
+/*------------------------SPORT STYLE START------------------------*/
+.sport {
+  padding: 70px 0;
+}
+.sport__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.sport__title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #000;
+  font-family: Roboto;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 120%;
+}
+.sport__wrapper-start {
+  width: 100%;
+  max-width: 490px;
+}
+.sport__description {
+  width: 100%;
+  max-width: 450px;
+  padding-left: 40px;
+  margin-bottom: 30px;
+  border-left: 3px solid #777;
+  color: #777;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+}
+.sport__btn {
+  border: none;
+  background: #EA625C;
+  color: #FFF;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 150%;
+  display: flex;
+  width: 260px;
+  padding: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
+/*------------------------SPORT STYLE END------------------------*/
+/*---------------------------------HEALTH START------------------------*/
+.health {
+  width: 100%;
+  height: 830px;
+  background-image: url("../assets/images/runners 1.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+.health__wrapper-start {
+  margin-left: auto;
+  padding-top: 240px;
+}
+.health__title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 120%;
+}
+.health__wrapper-start {
+  width: 100%;
+  max-width: 490px;
+}
+.health__description {
+  margin-bottom: 30px;
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.health__btn {
+  border: none;
+  background: #EA625C;
+  color: #FFF;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 150%;
+  display: flex;
+  width: 260px;
+  padding: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
+/*---------------------------------HEALTH  END------------------------------------*//*# sourceMappingURL=main.css.map */
